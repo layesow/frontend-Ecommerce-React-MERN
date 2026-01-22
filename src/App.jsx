@@ -6,11 +6,17 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className='min-h-[80vh] flex flex-col items-center justify-center'>
-        <h2 className='text-3xl font-dmSans'>Welcome to the E-commerce Store</h2>
-      </div>
-      <Footer />
+      <>
+      <Routes>
+          <Route path='/' element={<Home/>} />
+          <Route path='/shop' element={<Shop/>} />
+          <Route path='/product' element={<Product/>} />
+          <Route path='/login' element={<Login/>} />
+          <Route path='/register' element={<Register/>} />
+          <Route path='/cart' element={<Cart/>} />
+          <Route path='/checkout' element={<Checkout/>} />
+      </Routes>
+    </>
     </>
   )
 }
