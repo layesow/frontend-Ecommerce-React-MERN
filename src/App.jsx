@@ -1,6 +1,14 @@
 import {  } from 'react'
 import Header from './components/layouts/Header'
 import Footer from './components/layouts/Footer'
+import { Route, Routes } from 'react-router-dom'
+import Home from './pages/Home';
+import Shop from './pages/Shop';
+import Product from './pages/Product';
+import Register from './pages/Register';
+import Login from './pages/Login';
+import Cart from './pages/Cart';
+import Checkout from './pages/Checkout';
 
 function App() {
 
