@@ -1,5 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import { IoCartOutline } from "react-icons/io5";
+
 
 const Header = () => {
   return (
@@ -13,12 +15,16 @@ const Header = () => {
           <span className='text-3xl text-green-500 font-bold'>X</span>
           <span className='text-3xl text-slate-800 font-bold'>ECOM</span>
         </Link>
-        <nav className='text-md text-gray-800 space-x-5'>
+        <nav className='text-md text-gray-800 space-x-5 flex'>
           <Link className='hover:text-green-500' to='/'>Home</Link>
           <Link className='hover:text-green-500' to='/shop'>Shop</Link>
           <Link className='hover:text-green-500' to='/shop'>Mens</Link>
           <Link className='hover:text-green-500' to='/shop'>Womens</Link>
           <Link className='hover:text-green-500' to='/shop'>Kids</Link>
+          <Link className="relative" to='/cart'>
+            <span className='bg-red-400 text-sm rounded-[50%] flex justify-center items-center text-white absolute left-2 w-6 h-6 -top-5.5'>0</span>
+            <IoCartOutline className='mt-1' />
+          </Link>
         </nav>
     </div>
     </header>
