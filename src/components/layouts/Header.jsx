@@ -15,7 +15,7 @@ const Header = () => {
           <span className='text-3xl text-green-500 font-bold'>X</span>
           <span className='text-3xl text-slate-800 font-bold'>ECOM</span>
         </Link>
-        <nav className='text-md text-gray-800 space-x-5 flex'>
+        <nav className='text-md text-gray-800 space-x-5 flex items-center'>
           <Link className='hover:text-green-500' to='/'>Home</Link>
           <Link className='hover:text-green-500' to='/shop'>Shop</Link>
           <Link className='hover:text-green-500' to='/shop'>Mens</Link>
@@ -24,6 +24,9 @@ const Header = () => {
           <Link className="relative" to='/cart'>
             <span className='bg-red-400 text-sm rounded-[50%] flex justify-center items-center text-white absolute left-2 w-6 h-6 -top-5.5'>0</span>
             <IoCartOutline className='mt-1' />
+          </Link>
+          <Link className='bg-green-400 px-5 py-2 ms-3 text-md rounded-md text-gray-800'>
+            Login
           </Link>
         </nav>
     </div>
