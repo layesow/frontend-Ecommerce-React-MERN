@@ -12,8 +12,8 @@ const Header = () => {
       </div>
       <div className='max-w-360 mx-auto lg:py-6 py-3 lg:px-8 px-5 flex justify-between items-center'>
         <Link>
-          <span className='text-3xl text-green-500 font-bold'>X</span>
-          <span className='text-3xl text-slate-800 font-bold'>ECOM</span>
+          <span className='text-3xl text-green-500 font-bold'>E-</span>
+          <span className='text-3xl text-slate-800 font-bold'>Commerce</span>
         </Link>
         <nav className='text-lg hidden text-gray-800 space-x-5 sm:flex items-center'>
           <Link className='hover:text-green-500' to='/'>Home</Link>
