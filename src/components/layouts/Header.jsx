@@ -5,7 +5,7 @@ import { IoCartOutline } from "react-icons/io5";
 
 const Header = () => {
   return (
-    <header>
+    <header className='shadow'>
       <div className='w-full bg-black text-white px-5 py-2 flex justify-between'>
         <div>Free Shipping on Orders Over $50!</div>
         <div>Contact: +1 234 567 890</div>
