@@ -11,7 +11,7 @@ const Header = () => {
         <div>Contact: +1 234 567 890</div>
       </div>
       <div className='max-w-360 mx-auto lg:py-6 py-3 lg:px-8 px-5 flex justify-between items-center'>
-        <Link>
+        <Link to={'/'}>
           <span className='text-3xl text-green-500 font-bold'>E-</span>
           <span className='text-3xl text-slate-800 font-bold'>Commerce</span>
         </Link>

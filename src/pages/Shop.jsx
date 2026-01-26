@@ -158,7 +158,7 @@ const Shop = () => {
 
             <div className="col-span-12 lg:col-span-10">
               {/* products listing will go here */}
-              <div className="grid grid-cols-1  sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 mb-10">
                 {/* single product */}
                     {
                         products && products.map(product =>{
