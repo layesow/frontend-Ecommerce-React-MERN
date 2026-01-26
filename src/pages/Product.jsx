@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from 'react'
 import Layout from '../components/layouts/Layout'
 import { Link } from 'react-router-dom'
@@ -34,7 +35,6 @@ const Product = () => {
 
   useEffect(() => {
     if (gallery) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setMainImage(gallery[0]);
     }
   }, []);
