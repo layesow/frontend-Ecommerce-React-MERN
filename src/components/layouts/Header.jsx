@@ -25,7 +25,7 @@ const Header = () => {
             <span className='bg-red-400 text-sm rounded-[50%] flex justify-center items-center text-white absolute left-2 w-6 h-6 -top-5.5'>0</span>
             <IoCartOutline className='mt-1' />
           </Link>
-          <Link className='bg-green-400 px-5 py-2 ms-3 text-md rounded-md text-gray-800'>
+          <Link to={`/login`} className='bg-green-400 px-5 hover:bg-gray-800 hover:text-white py-2 ms-3 text-md rounded-md text-gray-800'>
             Login
           </Link>
         </nav>

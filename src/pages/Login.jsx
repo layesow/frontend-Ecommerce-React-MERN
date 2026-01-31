@@ -25,7 +25,7 @@ const Login = () => {
           </div>
 
           <div className="flex flex-col space-y-2 pt-3">
-            <Link className="bg-green-400 px-5 text-center py-2 w-full text-md rounded-md text-gray-800">
+            <Link className="bg-green-400 hover:bg-gray-800 hover:text-white px-5 text-center py-2 w-full text-md rounded-md text-gray-800">
               Login
             </Link>
             <div className="text-sm text-gray-600 text-center">
