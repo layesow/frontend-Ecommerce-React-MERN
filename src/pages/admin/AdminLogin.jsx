@@ -1,12 +1,34 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { useForm } from 'react-hook-form';
+import axios from '../../common/AdminAxios';
+import { useNavigate } from 'react-router-dom';
+import toast from 'react-hot-toast';
+import { AdminAuthContext } from '../../context/AdminAuth';
 
 const AdminLogin = () => {
 
     const {register, handleSubmit, formState: {errors}} = useForm();
+    const navigate = useNavigate();
+    const {login} = useContext(AdminAuthContext);
 
-    const onSubmit = (formData) => {
-        console.log(formData);
+    const onSubmit = async (formData) => {
+        try {
+            const {message, success, data} = await axios.post("/admin/auth/login" , formData);
+            if(success){
+                const adminInfo={
+                    token: data?.accessToken,
+                }
+                localStorage.setItem("adminInfo", JSON.stringify(adminInfo));
+                login(adminInfo);
+                navigate("/admin/dashboard");
+            }
+        } catch (error) {
+            if(error.status === 400){
+                toast.error(error?.response?.data?.message || "Invalid credentials");
+            }else{
+                console.error(error.message || "An error occurred during login");
+            }
+        }
     }
 
   return (
