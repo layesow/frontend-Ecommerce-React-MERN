@@ -12,6 +12,8 @@ import Checkout from './pages/Checkout';
 import Profile from './pages/account/Profile';
 import Orders from './pages/account/Orders';
 import ChangePassword from './pages/account/ChangePassword';
+import AdminLogin from './pages/admin/AdminLogin';
+import Dashboard from './pages/admin/Dashboard';
 
 function App() {
 
@@ -29,6 +31,16 @@ function App() {
           <Route path='/account/profile' element={<Profile/>} />
           <Route path='/account/orders' element={<Orders/>} />
           <Route path='/account/change-password' element={<ChangePassword/>} />
+
+
+          {/* admin route */}
+          <Route path='/admin/login' element={<AdminLogin/>} />
+          <Route path='/admin/dashboard' element={<Dashboard/>} />
+
+
+
+
+
       </Routes>
     </>
     </>
