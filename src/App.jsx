@@ -16,6 +16,7 @@ import AdminLogin from './pages/admin/AdminLogin';
 import Dashboard from './pages/admin/Dashboard';
 import { Toaster } from 'react-hot-toast';
 import RequireAdminAuth from './common/RiquireAdminAuth';
+import AdminGuest from './common/AdminGuest';
 
 function App() {
 
@@ -36,9 +37,18 @@ function App() {
 
 
           {/* admin route */}
-          <Route path='/admin/login' element={<AdminLogin/>} />
+          {/* <Route path='/admin/login' element={<AdminLogin/>} /> */}
           
           {/* <Route path='/admin/dashboard' element={<Dashboard/>} /> */}
+          <Route 
+            path='/admin/login'
+            element={
+              <AdminGuest>
+                <AdminLogin/>
+              </AdminGuest>
+            }
+          />
+
           <Route 
             path='/admin/dashboard'
             element={
